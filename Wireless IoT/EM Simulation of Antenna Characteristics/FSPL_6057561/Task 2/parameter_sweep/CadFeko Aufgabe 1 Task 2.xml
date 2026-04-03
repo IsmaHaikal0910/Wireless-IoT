@@ -1,0 +1,48 @@
+
+<parameter_sweep>
+  <settings>
+    <sweep_type>var</sweep_type>
+    <frequency_properties config='SParameterConfiguration1' numfreq='1' type='Single'/>
+    <frequency_properties config='StandardConfiguration1' numfreq='1' type='Single'/>
+  </settings>
+  <file>
+    <variable name='Distance' value='2'/>
+    <path>parameter_sweep\CadFeko Aufgabe 1 Task 2_01</path>
+  </file>
+  <file>
+    <variable name='Distance' value='5'/>
+    <path>parameter_sweep\CadFeko Aufgabe 1 Task 2_02</path>
+  </file>
+  <file>
+    <variable name='Distance' value='10'/>
+    <path>parameter_sweep\CadFeko Aufgabe 1 Task 2_03</path>
+  </file>
+  <file>
+    <variable name='Distance' value='20'/>
+    <path>parameter_sweep\CadFeko Aufgabe 1 Task 2_04</path>
+  </file>
+  <file>
+    <variable name='Distance' value='50'/>
+    <path>parameter_sweep\CadFeko Aufgabe 1 Task 2_05</path>
+  </file>
+  <file>
+    <variable name='Distance' value='100'/>
+    <path>parameter_sweep\CadFeko Aufgabe 1 Task 2_06</path>
+  </file>
+  <file>
+    <variable name='Distance' value='200'/>
+    <path>parameter_sweep\CadFeko Aufgabe 1 Task 2_07</path>
+  </file>
+  <file>
+    <variable name='Distance' value='500'/>
+    <path>parameter_sweep\CadFeko Aufgabe 1 Task 2_08</path>
+  </file>
+  <file>
+    <variable name='Distance' value='1000'/>
+    <path>parameter_sweep\CadFeko Aufgabe 1 Task 2_09</path>
+  </file>
+  <file>
+    <variable name='Distance' value='2000'/>
+    <path>parameter_sweep\CadFeko Aufgabe 1 Task 2_10</path>
+  </file>
+</parameter_sweep>

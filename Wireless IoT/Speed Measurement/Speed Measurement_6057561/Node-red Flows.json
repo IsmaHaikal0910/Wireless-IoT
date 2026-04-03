@@ -1,0 +1,232 @@
+[
+    {
+        "id": "5e9c5c3487a6cc02",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6d2003b3239decca",
+        "type": "mqtt in",
+        "z": "5e9c5c3487a6cc02",
+        "name": "",
+        "topic": "esp/trolley",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "e7a658e86bacafdb",
+        "nl": false,
+        "rap": false,
+        "rh": 0,
+        "inputs": 0,
+        "x": 280,
+        "y": 240,
+        "wires": [
+            [
+                "6b09358314e3fd2f"
+            ]
+        ]
+    },
+    {
+        "id": "6b09358314e3fd2f",
+        "type": "json",
+        "z": "5e9c5c3487a6cc02",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 470,
+        "y": 240,
+        "wires": [
+            [
+                "63c49c6cc1fe186e"
+            ]
+        ]
+    },
+    {
+        "id": "63c49c6cc1fe186e",
+        "type": "function",
+        "z": "5e9c5c3487a6cc02",
+        "name": "Split distance & speed",
+        "func": "// msg.payload is the object:\n// { t: ..., d: ..., v: ... }\n\nvar t = msg.payload.t;   // time (ms)\nvar d = msg.payload.d;   // distance in cm\nvar v = msg.payload.v;   // speed in cm/s\n\n// Output 1: distance, Output 2: speed\nreturn [\n  { payload: d, topic: \"distance_cm\" },\n  { payload: v, topic: \"speed_cm_s\" }\n];",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 240,
+        "wires": [
+            [
+                "5b62d8ee0b5a4dcc",
+                "24ef6423bd9d603c"
+            ],
+            [
+                "a21f0c7bc3cc80d5"
+            ]
+        ]
+    },
+    {
+        "id": "24ef6423bd9d603c",
+        "type": "ui_chart",
+        "z": "5e9c5c3487a6cc02",
+        "name": "Distance (cm)",
+        "group": "2ec3bf60ddc6b80c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Distance (cm)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "1000",
+        "removeOlderUnit": "3600",
+        "cutout": "",
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 920,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a21f0c7bc3cc80d5",
+        "type": "ui_chart",
+        "z": "5e9c5c3487a6cc02",
+        "name": "Speed (cm/s)",
+        "group": "2ec3bf60ddc6b80c",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Speed (cm/s)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "1000",
+        "removeOlderUnit": "3600",
+        "cutout": "",
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 910,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5b62d8ee0b5a4dcc",
+        "type": "debug",
+        "z": "5e9c5c3487a6cc02",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "e7a658e86bacafdb",
+        "type": "mqtt-broker",
+        "name": "Local Mosquitto",
+        "broker": "192.168.2.108",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": false,
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "2ec3bf60ddc6b80c",
+        "type": "ui_group",
+        "name": "Trolley",
+        "tab": "94feaf698dd8fcfb",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "94feaf698dd8fcfb",
+        "type": "ui_tab",
+        "name": "Ultrasonic Demo",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "057ef5f64e483403",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6"
+        }
+    }
+]

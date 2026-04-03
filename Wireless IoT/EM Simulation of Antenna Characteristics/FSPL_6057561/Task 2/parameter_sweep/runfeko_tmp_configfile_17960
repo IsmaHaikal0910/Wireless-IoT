@@ -1,0 +1,1 @@
+ -n 6 -localonly -localhost PC2-3E09DE7 -envall -mapall "C:\Program Files\Altair\2024\feko\bin\feko_mkl.csv.impi.exe" "CadFeko Aufgabe 1 Task 2_06_fr_1_ada_11" "--no-total-progress-output"
