@@ -49,7 +49,7 @@ Real-time speed measurement system using wireless/sensor-based techniques.
 
 ---
 
-####  [WiFi Strength Measurement / Documentation](./Wifi-Strength-Measurement)
+####  [WiFi Strength Measurement / Documentation](https://github.com/IsmaHaikal0910/Wireless-IoT/tree/main/Projects/Wifi%20Strength%20Mesurement/Documentation)
 
 Systematic measurement and documentation of WiFi signal strength across environments.
 
@@ -91,7 +91,7 @@ Eine Sammlung praxisorientierter Wireless- und IoT-Ingenieurprojekte aus den Ber
 
 ### Projekte
 
-####  [EM-Simulation von Antenneneigenschaften](./EM-Simulation-of-Antenna-Characteristics)
+####  [EM-Simulation von Antenneneigenschaften](https://github.com/IsmaHaikal0910/Wireless-IoT/tree/main/Projects/EM%20Simulation%20of%20Antenna%20Characteristics)
 
 Elektromagnetische Simulation und Analyse des Antennenverhaltens mithilfe numerischer Berechnungswerkzeuge.
 
@@ -105,7 +105,7 @@ Elektromagnetische Simulation und Analyse des Antennenverhaltens mithilfe numeri
 
 ---
 
-####  [Geschwindigkeitsmessung](./Speed-Measurement)
+####  [Geschwindigkeitsmessung](https://github.com/IsmaHaikal0910/Wireless-IoT/tree/main/Projects/Speed%20Measurement)
 
 Echtzeit-Geschwindigkeitsmesssystem auf Basis drahtloser und sensorgestützter Messtechnik.
 
@@ -119,7 +119,7 @@ Echtzeit-Geschwindigkeitsmesssystem auf Basis drahtloser und sensorgestützter M
 
 ---
 
-####  [WLAN-Signalstärkemessung / Dokumentation](./Wifi-Strength-Measurement)
+####  [WLAN-Signalstärkemessung / Dokumentation](https://github.com/IsmaHaikal0910/Wireless-IoT/tree/main/Projects/Wifi%20Strength%20Mesurement/Documentation)
 
 Systematische Messung und Dokumentation der WLAN-Signalstärke in verschiedenen Umgebungen.
 
