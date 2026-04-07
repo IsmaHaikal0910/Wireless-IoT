@@ -35,7 +35,7 @@ Electromagnetic simulation and analysis of antenna behavior using computational 
 
 ---
 
-####  [Speed Measurement](./Speed-Measurement)
+####  [Speed Measurement](https://github.com/IsmaHaikal0910/Wireless-IoT/tree/main/Projects/Speed%20Measurement)
 
 Real-time speed measurement system using wireless/sensor-based techniques.
 
