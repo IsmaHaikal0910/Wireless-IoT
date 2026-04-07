@@ -21,7 +21,7 @@ A collection of hands-on wireless and IoT engineering projects covering antenna 
 
 ### Projects
 
-####  [EM Simulation of Antenna Characteristics](./EM-Simulation-of-Antenna-Characteristics)
+####  [EM Simulation of Antenna Characteristics](https://github.com/IsmaHaikal0910/Wireless-IoT/tree/main/Projects/EM%20Simulation%20of%20Antenna%20Characteristics)
 
 Electromagnetic simulation and analysis of antenna behavior using computational tools.
 
