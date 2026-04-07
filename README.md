@@ -1,5 +1,4 @@
-# Wireless-IoT
-# 📡 Wireless IoT Projects
+#  Wireless IoT Projects
 
 **Muhammad Isma Haikal Bin Ismail**  
 Mechatronics Engineering · Jade Hochschule Wilhelmshaven  
@@ -15,7 +14,7 @@ A collection of hands-on wireless and IoT engineering projects covering antenna 
 
 ## Projects
 
-### 🔬 EM Simulation of Antenna Characteristics
+###  EM Simulation of Antenna Characteristics
 
 Electromagnetic simulation and analysis of antenna behavior using computational tools.
 
@@ -25,11 +24,11 @@ Electromagnetic simulation and analysis of antenna behavior using computational 
 - Near-field and far-field EM simulation
 - Parameter sweeps and frequency response characterization
 
-**Tools & Technologies:** COMSOL Multiphysics / MATLAB
+**Tools & Technologies:** POSTFEKO / CADFEKO / MATLAB
 
 ---
 
-### 🚗 Speed Measurement
+###  Speed Measurement
 
 Real-time speed measurement system using wireless/sensor-based techniques.
 
@@ -43,7 +42,7 @@ Real-time speed measurement system using wireless/sensor-based techniques.
 
 ---
 
-### 📶 WiFi Strength Measurement / Documentation
+###  WiFi Strength Measurement / Documentation
 
 Systematic measurement and documentation of WiFi signal strength across environments.
 
@@ -61,7 +60,7 @@ Systematic measurement and documentation of WiFi signal strength across environm
 
 | Domain | Tools / Methods |
 |---|---|
-| EM Simulation | COMSOL Multiphysics, MATLAB |
+| EM Simulation | POSTFEKO, MATLAB |
 | Embedded Systems | ESP32, C++ |
 | Wireless Protocols | WiFi (802.11), RSSI analysis |
 | Measurement & Calibration | Sensor integration, signal conditioning |
